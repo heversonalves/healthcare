@@ -1,0 +1,327 @@
+@charset "UF-8";
+
+@font-face {
+    font-family: 'ModernSans';
+    src: url('../fonte/modern_sans/ModernSans-Light.otf') format('opentype');
+}
+
+@media (max-width:1000px){
+    .DisplayFlex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intemDisplayFlex{
+        margin-top: 5%;
+       
+    }
+    .aboutHeader{
+        flex-direction: column;
+    }
+    .ImgDisplayFlex{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        
+    }    
+}
+
+:root{
+    --modern:'ModernSans',sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--modern);
+}
+
+header{
+    
+    padding-bottom: 1%;
+}
+
+.containerHeader{
+    background-image: url('../imagem/fundo.jpg');
+    background-size: cover;
+    border-radius: 30px;
+    margin: 0 1%;
+}
+.navHeader{
+    background-image: url('../imagem/fundo.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    margin: 5px 1%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+.LinkNavHeader{
+    text-decoration: none;
+    color:rgb(0, 98, 163) ;
+}
+
+.LinkNavHeader:hover{
+    text-decoration: underline;
+}
+
+.aboutHeader{
+    padding: 3% 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.title{
+    font-size: 2em;
+    padding-top: 15%;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.inputConsult{
+    padding: 8px 15px;
+    margin-top: 5%;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+
+
+input:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main{
+    background-image: url('../imagem/fundo.jpg');
+    background-size: cover;
+    margin: 1%;
+    padding: 3% 0;
+    border-radius: 30px ;
+}
+
+
+.ContainerServiceDispaleyFlex{
+    
+
+
+}
+
+.InputToDisplayFlex{
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+    background-color: transparent;
+}
+
+.ourServices > h1{
+    text-align: center;
+    padding: 0 5%;
+}
+
+.ourServices > p{
+    text-align: justify;
+    text-align: center;
+    padding: 0 5%;
+}
+
+hr{
+    width: 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.DisplayFlex{
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80%;
+    min-width: none;
+}
+.intemDisplayFlex{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.241);
+    border-radius: 20px;
+
+    padding-top: 10px;
+}
+
+.intemDisplayFlex:hover{
+    cursor: pointer;
+    
+}
+
+.ListDisplayFlex{
+    list-style-type: none;
+    padding: 0 0 0 10px;
+}
+.ListDisplayFlex li{
+    padding: 10px;
+    
+}
+
+.contentMain{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.248);
+    margin: 0 1%;
+}
+
+.IMG{
+    margin-left: 2%;
+    border-radius: 30px;
+    max-width: 90%;
+}
+
+.ContainerLearnMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.learnMore{
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+    background-color: transparent;
+}
+
+.ImgDisplayFlex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.leadinghealtcare{
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 20%;
+}
+.leadinghealtcare > hr {
+    margin: 20px 0;
+    margin-left: 10px;
+    
+}
+.leadinghealtcare > p{
+    max-width: 90%;
+    text-align: justify;
+    text-indent: 20px;
+    padding-bottom: 8%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.ContainerElement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChilContainerElement{
+    width: 94%;
+    padding: 20px;
+    margin-top: 10%;
+    border-radius: 20px;
+    background-image: linear-gradient(280deg,rgba(8, 156, 255, 0.645),rgb(4, 114, 187));
+
+}
+.titleReceive{
+    font-size: 2em;
+    padding-bottom: 5%;
+}
+.inputReceiver{
+    width: 80%;
+    border: solid 1px white;
+    background-color: transparent;
+    padding:10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+::placeholder{
+    color: white;
+}
+
+aside{
+    padding-bottom: 5%;
+}
+
+.asideTitle{
+    text-align: center;
+}
+
+.asideItemDisplayFlex{
+    margin-bottom: 10%;
+    background-color: white;
+    max-width: 250px;
+    min-height: 380px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.241);
+    border-radius: 20px;
+}
+.ListAside{
+    list-style-type: none;
+    padding: 15px;
+}
+.InputReadMore{
+    border: none;
+    background-color: transparent;
+    margin-top: 12%;
+    color: rgb(0, 153, 255);
+}
+
+.imgAside{
+    border-radius: 20px 20px 0 0;
+}
+.InputAside{
+    padding: 10px 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(3, 106, 174);
+    color: rgb(3, 106, 174);
+    background-color:transparent;
+}
+
+footer{
+    background-image:linear-gradient(to bottom,rgba(8, 156, 255, 0.529),rgb(4, 103, 169));
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    padding-left: 3%;
+}
+
+.SectionFooterwidthMax{
+    width: 25%;
+    
+}
+.span{
+    border-radius: 50%;
+    background-color: white;
+    padding: 4% 6%;
+    color:rgb(8, 156, 255, 0.529) ;
+    font-size: 1.2em;
+}
+
+.UlFooter{
+    list-style-type: none;
+
+}
+.UlFooter li{
+    padding: 10px 0;
+}
+.hoverFooter:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
